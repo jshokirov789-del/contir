@@ -1,0 +1,148 @@
+<!doctype html>
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animatsiyali Tugma</title>
+  <meta name="theme-color" content="#0b0c12">
+  <title>Manga Counter Strike 2 — Mobil Arena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Unbounded:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene">
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="badge" id="modeBadge">ONLINE</span>
+        <h1>Manga Counter Strike 2</h1>
+        <p>Mobil arena. Manga uslubida jang, tezkor duel va chizgi portlashlar.</p>
+      </div>
+      <div class="status">
+        <div class="stat">
+          <span class="label">Ping</span>
+          <span class="value" id="ping">—</span>
+        </div>
+        <div class="stat">
+          <span class="label">Xona</span>
+          <span class="value" id="room">—</span>
+        </div>
+        <div class="stat">
+          <span class="label">Server</span>
+          <span class="value" id="server">—</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="arena-wrap panel">
+        <div class="panel-title">
+          <span class="panel-tag">Ranked</span>
+          <span class="panel-mode" id="matchMode">4v4 Duel</span>
+        </div>
+
+        <canvas id="arena" width="1200" height="800" aria-label="Manga Counter Strike 2 arena"></canvas>
+
+        <div class="hud">
+          <div class="hud-block">
+            <div class="meter">
+              <span class="meter-label">HP</span>
+              <div class="meter-bar">
+                <div class="meter-fill" id="hpBar"></div>
+              </div>
+            </div>
+            <div class="meter">
+              <span class="meter-label">Shield</span>
+              <div class="meter-bar shield">
+                <div class="meter-fill" id="shieldBar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hud-block right">
+            <div class="score-box">
+              <span>Score</span>
+              <strong id="score">0</strong>
+            </div>
+            <div class="score-box">
+              <span>Wave</span>
+              <strong id="wave">1</strong>
+            </div>
+            <div class="score-box">
+              <span>Ammo</span>
+              <strong id="ammo">∞</strong>
+            </div>
+          </div>
+        </div>
+
+    <main class="card">
+      <p class="eyebrow">UI / Motion</p>
+      <h1>Animatsiyali Tugma</h1>
+      <p class="subtitle">Hover qiling yoki bosing — yaltiroq, ripple va uchqunlar.</p>
+        <div class="touch-controls">
+          <div class="stick" id="moveStick" aria-label="Harakat joystigi">
+            <div class="stick-base"></div>
+            <div class="stick-handle"></div>
+          </div>
+
+      <button type="button" class="pulse-btn" id="magicBtn">
+        <span class="label">Boshlash</span>
+        <span class="shine" aria-hidden="true"></span>
+      </button>
+          <div class="aim-pad" id="aimPad">
+            <span>Nishon</span>
+            <div class="aim-dot"></div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="action fire" id="fireBtn" type="button">Otish</button>
+            <button class="action dash" id="dashBtn" type="button">Dash</button>
+          </div>
+        </div>
+
+      <p class="hint">Klaviatura: Tab + Enter</p>
+        <div class="overlay show" id="overlay">
+          <div class="overlay-card">
+            <p class="overlay-badge">Mobile Online</p>
+            <h2>Matchmaking boshlansinmi?</h2>
+            <p class="overlay-desc">Joystick bilan yuring, o‘ng padda nishonlang. “Otish” tugmasini bosib turing.</p>
+            <div class="overlay-actions">
+              <button id="startBtn" class="primary" type="button">Onlinega ulanish</button>
+              <button id="practiceBtn" class="ghost" type="button">Mashq rejimi</button>
+            </div>
+            <ul class="tips">
+              <li>O‘yin brauzerda ishlaydi — haqiqiy server emas.</li>
+              <li>Yuqori ball lokal saqlanadi.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <aside class="side">
+        <section class="panel roster">
+          <h3>Squad</h3>
+          <ul id="roster"></ul>
+        </section>
+        <section class="panel feed">
+          <h3>Kill Feed</h3>
+          <ul id="feed"></ul>
+        </section>
+        <section class="panel leaderboard">
+          <h3>Global Reyting</h3>
+          <ol id="leaderboard"></ol>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+</html>
+
